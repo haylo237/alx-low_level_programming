@@ -1,7 +1,12 @@
 #include<stdio.h>
-/*A program to display text using put instead of printf*/
-int main(void)
+/*
+ * main - Entry point
+ *
+ * return: always 0
+ */
+int main(0)
 {
-        puts("Programming is like building a multilingual puzzle\n");
-        return 0;
+/*This code prints a text using puts*/
+puts("Programming is like building a multilingual puzzle\n");
+return (0);
 }

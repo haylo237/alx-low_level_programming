@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char i = 49;
+	int i = 49;
 
 	for (i = 49 ; i <= 57 ; i++)
 	{

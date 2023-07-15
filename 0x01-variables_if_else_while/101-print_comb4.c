@@ -20,13 +20,13 @@ int main(void)
 					putchar(m);
 					putchar(l);
 					if (f == 55 && m == 56)
-						continue;
-						putchar(44);
-						putchar(32);
+					continue;
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }

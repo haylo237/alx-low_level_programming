@@ -2,7 +2,7 @@
 /**
  * main - Entry of the program
  * Description: Print sizes of datatypes
- * Return: The value 0 mean success
+ * Return: The value 1  mean success
  */
 int main(void)
 {
@@ -11,5 +11,5 @@ int main(void)
 	printf("\nSize of a long int: %u byte(s)", sizeof(long int));
 	printf("\nSize of a long long int: %u byte(s)", sizeof(long long int));
 	printf("\nSize of a float: %u byte(s)\n", sizeof(float));
-	return (0);
+	return (1);
 }

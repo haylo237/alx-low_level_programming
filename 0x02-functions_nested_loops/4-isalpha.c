@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _isalpha - Determines if c is a letter
  * @c: ASCII character

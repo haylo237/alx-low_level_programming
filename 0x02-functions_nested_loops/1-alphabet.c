@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_alphabet - function responsible for activity
- * Return: O is success
+ * Return:void
  */
 void print_alphabet(void)
 {

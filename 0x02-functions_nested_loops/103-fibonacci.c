@@ -34,5 +34,5 @@ long int fibo_sum(long int l)
 		s = f;
 		f = s;
 	}
-	return (sum)
+	return (sum);
 }

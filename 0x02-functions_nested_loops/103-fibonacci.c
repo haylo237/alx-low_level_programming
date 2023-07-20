@@ -10,7 +10,6 @@ int main(void)
 	long int sum = 0;
 	long int n;
 	int l = 4000000;
-	int i;
 
 	while (f <= l)
 	{

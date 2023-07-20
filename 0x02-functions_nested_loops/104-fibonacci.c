@@ -5,18 +5,18 @@
  */
 int main(void)
 {
-	long int f = 1;
-	long int s = 2;
-	long int n;
+	unsigned int f = 1;
+	unsigned int s = 2;
+	unsigned int n;
 	int i;
 
-	printf("%li, ", f);
-	printf("%li, ", s);
+	printf("%u, ", f);
+	printf("%u, ", s);
 
 	for (i = 2 ; i < 98 ; i++)
 	{
 		n = f + s;
-		printf("%li", n);
+		printf("%u", n);
 		if (i != 97)
 			printf(", ");
 		f = s;

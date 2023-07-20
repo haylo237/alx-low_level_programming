@@ -18,7 +18,7 @@ int main(void)
 	{
 		n = f + s;
 		printf("%li", n);
-		if (i != 49);
+		if (i != 49)
 			printf(", ");
 		f = s;
 		s = n;

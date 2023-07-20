@@ -10,10 +10,13 @@ int main(void)
 	long int n;
 	int i;
 
+	printf("%li, ", f);
+	printf("%li, ", s);
+
 	for (i = 2 ; i < 98 ; i++)
 	{
 		n = f + s;
-		printf("%li");
+		printf("%li", n);
 		if (i != 97)
 			printf(", ");
 		f = s;

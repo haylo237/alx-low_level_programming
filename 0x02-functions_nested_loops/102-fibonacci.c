@@ -7,7 +7,7 @@
 int main(void)
 {
 	long int f = 1;
-	long int s, f, i;
+	long int s, n, i;
 
 	s = f + 1;
 

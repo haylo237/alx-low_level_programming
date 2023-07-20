@@ -14,12 +14,15 @@ int main(void)
 	printf("%li, ", f);
 	printf("%li, ", s);
 
-	for (i = 3 ; i < 50 ; i++)
+	for (i = 2 ; i < 50 ; i++)
 	{
 		n = f + s;
-		printf("%li, ", n);
+		printf("%li", n);
+		if (i != 49);
+			printf(", ");
 		f = s;
 		s = n;
 	}
+	printf("\n");
 	return (0);
 }

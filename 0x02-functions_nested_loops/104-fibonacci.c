@@ -23,4 +23,5 @@ int main(void)
 		s = n;
 	}
 	printf("\n");
+	return (0);
 }

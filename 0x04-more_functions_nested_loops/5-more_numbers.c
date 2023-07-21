@@ -3,9 +3,9 @@
  * more_numbers - prints the values
  * Return: Void
  */
-Void more_numbers(void)
+void more_numbers(void)
 {
-	int I, j;
+	int i, j;
 
 	for (j = 0 ; j <= 10 ; j++)
 	{

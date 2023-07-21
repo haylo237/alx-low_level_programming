@@ -9,9 +9,9 @@ int main(void)
 {
 	long a, lf;
 	long n = 612852475143;
-	double s = sqrt(number);
+	double s = sqrt(n);
 
-	for (a = 1 ; a <= s; a++)
+	for (a = 1 ; a <= s ; a++)
 	{
 		if (n % a == 0)
 		{

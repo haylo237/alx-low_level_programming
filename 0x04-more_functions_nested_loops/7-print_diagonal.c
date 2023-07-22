@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_diagonal - prints
- * @n: The number of times to print lines
+ * main - prints
+ * @x: The number of times to print lines
  * Return: void
  */
-void print_diagonal(int n)
+int main(void)
 {
 	int x;
 

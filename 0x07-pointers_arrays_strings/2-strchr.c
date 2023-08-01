@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /**
  * _strchr - Function to be executed
  * @s: input string

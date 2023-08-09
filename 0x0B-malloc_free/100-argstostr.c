@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * 
+ *
  *
  *
  *
@@ -12,7 +12,7 @@ char *argstostr(int ac, char **av)
 	int ch = 0, i = 0, j = 0, k = 0;
 	char *s;
 
-	if (sc == 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	while (i < ac)
@@ -39,7 +39,7 @@ char *argstostr(int ac, char **av)
 			j++;
 		}
 
-		s{k} = '\n';
+		s[k] = '\n';
 
 		j = 0;
 		k++;

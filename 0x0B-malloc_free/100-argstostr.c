@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *
- *
- *
- *
+ * argstostr - concatenantes arguments
+ * @ac: argument count
+ * @av: argument vector
+ * Return: Returns pointer
  */
 char *argstostr(int ac, char **av)
 {

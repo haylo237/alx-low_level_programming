@@ -5,7 +5,7 @@
  * string_nconcat - function entry point
  * @s1: string 1
  * @s2: string 2
- * @n: int 
+ * @n: int
  * Return: Concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n >= k)
 		l = i + k;
-	else 
+	else
 		l = i + n;
 
 	str = malloc(sizeof(char) * l + 1);

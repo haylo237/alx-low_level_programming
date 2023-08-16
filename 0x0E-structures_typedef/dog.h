@@ -1,3 +1,6 @@
+#ifndef _HEADER_
+#define _HEADER_
+
 /**
  * struct dog - data type for dog
  * @name: dog name

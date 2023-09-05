@@ -1,39 +1,28 @@
-include "main.h"
+#include "main.h"
+#include <stdlib.h>
 
 /**
- * append_text_to_file - appends text at the end of a file
- * @filename: filename.
- * @text_content: added content.
- *
- * Return: 1 if the file exists. -1 if the fails does not exist
- * or if it fails.
+ * read_textfile- Read text file print to STDOUT.
+ * @filename: text file being read
+ * @letters: number of letters to be read
+ * Return: w- actual number of bytes read and printed
+ *        0 when function fails or filename is NULL.
  */
-int append_text_to_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	int nletters;
-	int rwr;
+	char *buf;
+	ssize_t fd;
+	ssize_t w;
+	ssize_t t;
 
-	if (!filename)
-		return (-1);
-
-	fd = open(filename, O_WRONLY | O_APPEND);
-
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
-		return (-1);
+		return (0);
+	buf = malloc(sizeof(char) * letters);
+	t = read(fd, buf, letters);
+	w = write(STDOUT_FILENO, buf, t);
 
-	if (text_content)
-	{
-		for (nletters = 0; text_content[nletters]; nletters++)
-			;
-
-		rwr = write(fd, text_content, nletters);
-
-		if (rwr == -1)
-			return (-1);
-	}
-
+	free(buf);
 	close(fd);
-
-	return (1);
+	return (w);
 }
